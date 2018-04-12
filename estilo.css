@@ -33,7 +33,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 154px;
-	top: 300px;
+	top: 270px;
 }
 
 header > h2 {
@@ -64,10 +64,6 @@ article {
   float: right;
 }
 
-#conteudo {
-	position: relative;
-}
-
 #cardapio {
   padding: 0px 20px 50px 20px;
   background-color: rgba(255,255,255, 0.2);
@@ -94,13 +90,13 @@ header, #cardapio {
 
 #bolhas {
 	position: absolute;
-	top: 465px;	
+	top: 425px;	
 	left: 42px;
 }
 
 #peixe {
 	position: absolute;
-	top: 659px;
+	top: 612px;
 	left: -44px;
 }
 
@@ -121,4 +117,9 @@ header, #cardapio {
 
 #ticket:hover {
   left: 0;
+}
+
+footer {
+  padding: 46px 15px 25px 0px;
+  text-align: right;
 }
