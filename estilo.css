@@ -5,11 +5,16 @@ html, body, h1 {
   margin: 0 auto;
 }
 
-body {
+#recipiente {
   background-image: linear-gradient(#f6f1b2,#4599b2);
+  border: 1px solid #d3d3d3;
+}
+
+body {
   font-family: "Verdana", sans-serif;
   font-size: 14px;
   color: #333;
+  width: 800px; /* header + lateral */
 }
 
 h1 {
@@ -22,14 +27,22 @@ h1 {
 
 #lateral > h2 {
   font-size: 48px;
+  text-align: center;
   transform: rotate(270deg);
 	position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 154px;
+	top: 300px;
 }
 
 header > h2 {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 24px;
   font-weight: normal;
+  text-align: right;
+  margin: 0;
+  padding-right: 70px;
   padding-top: 0;
 }
 
@@ -38,10 +51,74 @@ header > h2 {
 }
 
 h3 {
+  margin-bottom: 0;
+  line-height: 2em;
   font-size: 18px;
 }
 
-main {
+article {
+  line-height: 2em;
+}
+
+.preco {
+  float: right;
+}
+
+#conteudo {
+	position: relative;
+}
+
+#cardapio {
+  padding: 0px 20px 50px 20px;
   background-color: rgba(255,255,255, 0.2);
   border: 1px solid #aac0ae;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header, #cardapio {
+  margin-left: 154px;
+}
+
+#lateral {
+  box-sizing: border-box;
+  position: relative;
+  width: 154px;
+  top: -83px;
+}
+
+#siri {
+	position: absolute;
+	left: -10px;
+}
+
+#bolhas {
+	position: absolute;
+	top: 465px;	
+	left: 42px;
+}
+
+#peixe {
+	position: absolute;
+	top: 659px;
+	left: -44px;
+}
+
+#rodape {
+	position: absolute;
+	height: 116px;
+	top: 652px;
+	left: 690px;
+	bottom: 100px;
+}
+
+#ticket {
+	position: fixed;
+	top: 295px;
+	left: -69px;
+	transition: left 100ms ease-out;
+}
+
+#ticket:hover {
+  left: 0;
 }
